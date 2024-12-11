@@ -70,7 +70,7 @@ public class Registro {
 				for (Studenti studente : registro) {
 					if (studente.getMatricola().equals(matricolaUnivoca)) {
 						System.out.println("Studente trovato: " + studente);
-					    trovato = true; 
+					    trovato = true; //inizializzarlo con false
 						break; // Esce dal metodo, evitando di continuare a cercare
 					}
 				}
@@ -89,6 +89,7 @@ public class Registro {
 				break;
 			}
 		} while (scelta != 4); // Continua a visualizzare il menu finché l'utente non sceglie di uscire
-
+		scanner.close(); // chiamato solo alla fine
 	}
 }
+ 
